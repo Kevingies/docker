@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
 </head>
 
+<nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="/titanic">Titanic</a></li>
+      <li><a href="https://github.com/Kevingies/docker/tree/master/app">About</a></li>
+    </ul>
+  </nav>
+  
+
 <body>
     <main>
         <h1>I have been seen {{ count }} times.</h1>
@@ -16,7 +25,14 @@
             <li>{{ i }}: Hello {{ name }}! </li>
             {% endfor %}
         </ul>
+        <h1><a href="https://www.hwr-berlin.de">Visit HWR-Berlin online!</a></h1>
+        <h1><img src="{{ url_for('static', filename='happy.jpg') }}" alt="Image">
+        </h1>
     </main>
 </body>
+
+<footer>
+    <p>Author: Kevin Giesen</p>
+  </footer>
 
 </html>
