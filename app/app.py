@@ -8,6 +8,7 @@ from io import BytesIO
 import base64
 
 
+
 app = Flask(__name__, static_url_path='/Users/kevingiesen/docker/static')
 cache = redis.Redis(host='redis', port=6379)
 
